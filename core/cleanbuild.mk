@@ -14,7 +14,7 @@
 #
 
 # Don't bother with the cleanspecs if you are running mm/mmm
-ifeq ($(ONE_SHOT_MAKEFILE)$(dont_bother),)
+ifeq ($(ONE_SHOT_MAKEFILE)$(dont_bother)$(NO_ANDROID_CLEANSPEC),)
 
 INTERNAL_CLEAN_STEPS :=
 

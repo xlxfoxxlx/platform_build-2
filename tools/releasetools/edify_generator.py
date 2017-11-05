@@ -238,6 +238,7 @@ class EdifyGenerator(object):
           p.mount_point, mount_flags))
       self.mounts.add(p.mount_point)
 
+<<<<<<< HEAD
   def Unmount(self, mount_point):
     """Unmount the partition with the given mount_point."""
     if mount_point in self.mounts:
@@ -249,6 +250,8 @@ class EdifyGenerator(object):
     destination directory."""
     self.script.append('package_extract_dir("%s", "%s");' % (src, dst))
 
+=======
+>>>>>>> af28838b97e268bdb9acdd3ef30776f002be864d
   def Comment(self, comment):
     """Write a comment into the update script."""
     self.script.append("")
